@@ -1,0 +1,235 @@
+.section_home {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  min-height: 90vh;
+}
+
+.container_front_welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.h1-name {
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 251, 255, 0.986);
+  background-image: url(../../../assets/bg-name.png);
+  background-clip: text; /* Propiedad estándar para la compatibilidad */
+  -webkit-background-clip: text;
+  background-size: cover; /* Ajustar tamaño de la imagen al texto */
+  animation: back 30s linear infinite, gradient 15s ease infinite;
+  /*  position: absolute;
+  top: 22%; */
+}
+
+@keyframes back {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.frontend-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.box-welcome {
+  background-color: #2d023efa;
+  border-radius: 12px;
+  padding-top: 15px;
+  letter-spacing: 2px;
+  /* position: absolute;
+  top: 70%; */
+  text-align: center;
+  /*   width: 80%; */
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.box-welcome > span {
+  font-size: 50px;
+  font-weight: 800;
+  display: inline-block;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.box-welcome > span:nth-child(n) {
+  /* opacity: 0; */
+  animation: glow 2s ease-in-out infinite; /* Aplicamos la animación */
+  animation-delay: calc(
+    0.1s * (n - 1)
+  ); /* Retardo de animación según el índice de la letra */
+}
+
+.box-welcome > span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.box-welcome > span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.box-welcome > span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+.box-welcome > span:nth-child(5) {
+  animation-delay: 1s;
+}
+.box-welcome > span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+.box-welcome > span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+.box-welcome > span:nth-child(8) {
+  animation-delay: 1.75s;
+}
+.box-welcome > span:nth-child(9) {
+  animation-delay: 2s;
+}
+.box-welcome > span:nth-child(10) {
+  animation-delay: 2.25s;
+}
+.box-welcome > span:nth-child(11) {
+  animation-delay: 2.5s;
+}
+.box-welcome > span:nth-child(12) {
+  animation-delay: 2.5s;
+}
+.box-welcome > span:nth-child(13) {
+  animation-delay: 2.75s;
+}
+.box-welcome > span:nth-child(14) {
+  animation-delay: 3s;
+}
+.box-welcome > span:nth-child(15) {
+  animation-delay: 3.5s;
+}
+.box-welcome > span:nth-child(16) {
+  animation-delay: 3.75s;
+}
+.box-welcome > span:nth-child(17) {
+  animation-delay: 4s;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    color: #ff00d0;
+    text-shadow: 0 0 12px rgb(179, 0, 255), 0 0 50px rgb(179, 0, 255),
+      0 0 100px rgb(179, 0, 255);
+  }
+  10%,
+  90% {
+    color: #ff05ff44;
+    text-shadow: none;
+  }
+}
+
+.img_avatar {
+  width: 270px;
+  height: 400px;
+  /*   left: 50%;
+  transform: translateX(-50%); */
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: translateX(-5%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-5%) rotate(5deg);
+  }
+}
+
+.img_avatar {
+  animation: sway 3s infinite alternate;
+}
+
+@media (max-width: 1200px) {
+  .box-welcome > span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .box-welcome > span {
+    font-size: 35px;
+  }
+
+  .container_front_welcome {
+    gap: 1rem;
+  }
+
+  .section_home {
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+  .h1-name {
+    font-size: 95px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section_home {
+    min-height: 93vh;
+    padding: 0;
+    width: 90%;
+  }
+
+  .box-welcome {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section_home {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .h1-name {
+    font-size: 60px;
+  }
+
+  .box-welcome > span {
+    font-size: 23px;
+  }
+
+  .img_avatar {
+    height: 210px;
+    width: 150px;
+  }
+
+  .box_img_aboutMe {
+    display: flex;
+    justify-content: center;
+  }
+
+  .foto_aboutMe {
+    height: 370px;
+  }
+}

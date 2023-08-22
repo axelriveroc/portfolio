@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,800;6..12,1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;400;800&display=swap');
+
+:root {
+  /* CSS HEX */
+  --haiti: #1c0b2c;
+  --scarlet-gum: #3a1153;
+  --loulou: #5f0f5b;
+  --honey-flower: #491f72;
+  --blue-haze: #cdc4d8;
+  --violet: #3d0943;
+  --rum: #7c6c8c;
+  --plum: #942c8c;
+  --voodoo: #453450;
+  --black: #040404;
+
+  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  background-image: linear-gradient(
+    to left top,
+    var(--scarlet-gum),
+    var(--haiti),
+    var(--black),
+    var(--violet)
+  );
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  min-height: 100vh; /* cambiar y ponerlo en un contenedor o ver si funciona con el minheight */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

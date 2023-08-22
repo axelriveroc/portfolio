@@ -1,0 +1,21 @@
+/* Shape css */
+
+.custom-shape-divider-top-1691756888 {
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1691756888 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1691756888 .shape-fill {
+  fill: black;
+}
