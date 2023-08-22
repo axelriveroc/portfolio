@@ -1,34 +1,84 @@
-.prueba {
-  width: 80%;
-  min-height: 70vh;
-  background-image: url(../../../assets//bbblurry.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  color: pink;
-  gap: 1.5rem;
-  margin: 0 auto;
+.section_myProjects {
+	width: 80%;
+	min-height: 70vh;
+	background-image: url(../../../assets//bbblurry.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+	color: pink;
+	gap: 1rem;
+	margin: 0 auto;
+	border-radius: 15px;
 }
 
 .card_project {
-  border: solid salmon 1px;
-  margin: 1rem;
-  background-color: rgba(1, 1, 1, 0.5);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 1rem;
-  border-radius: 12px;
+	border: solid salmon 1px;
+	margin: 1rem;
+	background-color: rgba(1, 1, 1, 0.5);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 1rem;
+	border-radius: 12px;
 }
 
 .img_project {
-  width: 100%;
-  border-radius: 10px;
+	width: 100%;
+	border-radius: 10px;
 }
 
-.listado_ul_tecs {
-  list-style-type: none;
+.container_tecn_project {
+	display: flex;
+	column-gap: 5px;
+	padding: 5px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	text-align: center;
+	transition: all 0.5s;
+	scrollbar-width: thin;
+	scrollbar-color: violet lightgray;
+	-webkit-scrollbar-width: 10px;
+	-webkit-scrollbar-height: 10px;
+	-webkit-scrollbar-color: black;
+	-webkit-scrollbar-track-color: white;
+	-webkit-scrollbar-thumb-color: gray;
+	-webkit-scrollbar-track-width: 10px;
+	-webkit-scrollbar-thumb-width: 10px;
+}
+
+.container_tecn_project span {
+	color: white;
+	border: solid 1px rgb(193, 64, 86);
+	padding: 7px;
+	border-radius: 10px;
+}
+
+.text_description_project {
+	font-style: oblique;
+}
+
+.container_descript_icons {
+	color: rgb(241, 191, 199);
+	background-color: rgba(1, 1, 1, 0.5);
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.tecnologies_icons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.container_buttons {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.button_project {
+	background-color: blueviolet !important;
 }
