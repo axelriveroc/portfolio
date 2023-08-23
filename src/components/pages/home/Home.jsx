@@ -1,5 +1,5 @@
 import "./homeStyles.css";
-import img_avatar from "../../../assets/avatar1.png";
+/* import img_avatar from "../../../assets/avatar1.png"; */
 import { Box } from "@mui/material";
 const Home = () => {
   return (
@@ -28,9 +28,9 @@ const Home = () => {
           <span>R</span>
         </div>
       </Box>
-      <div>
+      {/* <div>
         <img src={img_avatar} alt="s" className={`img_avatar`} />
-      </div>
+      </div> */}
     </section>
   );
 };

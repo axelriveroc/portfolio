@@ -1,84 +1,90 @@
 .section_aboutMe {
-  min-height: 95vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	min-height: 95vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../../../assets//bbblurry.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .box_aboutMe {
-  width: 80%;
-  border: solid pink 0.5px;
-  display: flex;
-  align-items: center;
-  color: white;
+	width: 80%;
+	border: solid pink 0.5px;
+	display: flex;
+	align-items: center;
+	color: white;
+	background-color: rgba(1, 1, 1, 0.2);
+	border-radius: 5px 5px 10px 10px;
 }
 
 .box_img_aboutMe {
-  width: 35%;
-  position: relative;
+	width: 35%;
+	position: relative;
 }
 
 .foto_aboutMe {
-  height: 450px;
-  position: absolute;
-  bottom: -145px;
+	height: 450px;
+	position: absolute;
+	bottom: -145px;
 }
 
 .box_h2_description_aboutMe {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 50%;
-  gap: 20px;
-  padding: 15px 0px;
-  color: pink;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 50%;
+	gap: 20px;
+	padding: 15px 0px;
+	color: pink;
 }
 
 .text_description_aboutMe {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 20px;
 }
 
 @media (min-width: 1500px) {
-  .box_h2_description_aboutMe {
-    padding: 25px 0px;
-  }
+	.box_h2_description_aboutMe {
+		padding: 25px 0px;
+	}
 }
 
 @media (max-width: 1200px) {
-  .box_h2_description_aboutMe {
-    padding: 15px 0px;
-    width: 60%;
-    gap: 15px;
-  }
+	.box_h2_description_aboutMe {
+		padding: 15px 0px;
+		width: 60%;
+		gap: 15px;
+	}
 
-  .foto_aboutMe {
-    bottom: -142px;
-  }
+	.foto_aboutMe {
+		bottom: -142px;
+	}
 }
 
 @media (max-width: 1050px) {
-  .foto_aboutMe {
-    bottom: -153px;
-  }
+	.foto_aboutMe {
+		bottom: -153px;
+	}
 }
 
 @media (max-width: 900px) {
-  .box_aboutMe {
-    border: none;
-    flex-direction: column;
-  }
+	.box_aboutMe {
+		border: none;
+		flex-direction: column;
+	}
 
-  .box_img_aboutMe {
-    width: 50%;
-  }
-  .foto_aboutMe {
-    position: static;
-    bottom: 0;
-  }
-  .box_h2_description_aboutMe {
-    width: 90%;
-  }
+	.box_img_aboutMe {
+		width: 50%;
+	}
+	.foto_aboutMe {
+		position: static;
+		bottom: 0;
+	}
+	.box_h2_description_aboutMe {
+		width: 90%;
+	}
 }
