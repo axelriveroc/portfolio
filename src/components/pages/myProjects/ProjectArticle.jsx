@@ -18,12 +18,19 @@ const ProjectArticle = ({
 	description,
 	github,
 	demo,
+	iconsAudio,
+	iconsCulmen,
+	iconsTodo,
+	iconsHalloween,
+	iconsTarot,
 }) => {
 	const [expanded, setExpanded] = useState(false);
 
 	const handleChange = () => {
 		setExpanded(!expanded);
 	};
+
+	console.log(iconsAudio);
 
 	return (
 		<article className="card_project">
@@ -47,20 +54,40 @@ const ProjectArticle = ({
 						justifyContent: "space-around",
 					}}
 				>
-					<AccordionSummary
-						aria-controls="panel1d-content"
-						id="panel1d-header"
-					>
+					<AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
 						{expanded ? <KeyboardArrowRightIcon /> : <KeyboardArrowDownIcon />}
-            {!expanded ? <Typography sx={{ fontStyle: "italic", pl: 2 }}>
-							Description
-						</Typography> : ""
-            
-          }
-							
+						{!expanded ? (
+							<Typography sx={{ fontStyle: "italic", pl: 2 }}>
+								Description
+							</Typography>
+						) : (
+							""
+						)}
 					</AccordionSummary>
 					<AccordionDetails>
 						<p className="text_description_project">{description}</p>
+						<div className="tecnologies_icons">
+							{title === "AudioPhile - Ecommerce" &&
+								iconsAudio?.map((icon, index) => (
+									<figure key={index}>{icon}</figure>
+								))}
+							{title === "Culmen - Ecommerce" &&
+								iconsCulmen?.map((icon, index) => (
+									<figure key={index}>{icon}</figure>
+								))}
+							{title === "To Do List - DH" &&
+								iconsTodo?.map((icon, index) => (
+									<figure key={index}>{icon}</figure>
+								))}
+							{title === "Encanto Halloween - Shop" &&
+								iconsHalloween?.map((icon, index) => (
+									<figure key={index}>{icon}</figure>
+								))}
+							{title === "Tarot - Oráculo Mágico" &&
+								iconsTarot?.map((icon, index) => (
+									<figure key={index}>{icon}</figure>
+								))}
+						</div>
 					</AccordionDetails>
 				</Accordion>
 			</div>
