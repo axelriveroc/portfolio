@@ -4,9 +4,25 @@ import audio_mockups from "../../../assets/projects/mockups/audiophile-mockups.p
 import todo_mockups from "../../../assets/projects/mockups/todo_mockups.png";
 import hallowen_mockups from "../../../assets/projects/mockups/halloween-mockups.png";
 import tarot_mockups from "../../../assets/projects/mockups/tarot_mockups.png";
+import culmen_mockups from "../../../assets/projects/mockups/culmen_mockups.png";
 import Button from "@mui/material/Button";
+import {
+	Accordion,
+	AccordionDetails,
+	AccordionSummary,
+	Typography,
+} from "@mui/material";
+import { useState } from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const MyProjects = () => {
+	const [expanded, setExpanded] = useState("");
+
+	const handleChange = (panel) => (event, newExpanded) => {
+		setExpanded(newExpanded ? panel : false);
+	};
+
 	return (
 		<>
 			<h2 className="title_section_myprojects"> MY PROJECTS </h2>
@@ -169,6 +185,184 @@ const MyProjects = () => {
 									<path d="M11.0683 2.89968V22.2973l-2.11399 1.70265V7.8638h2.975l6.0933-4.96412zM14.93426 0v15.76724H19.025l-6.20044 5.08865V1.4689L14.93426 0z" />
 								</svg>
 							</figure>
+							<figure>
+								<svg
+									role="img"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path d="M24 0v24H0V0h24ZM10.933 15.89H6.84v5.52h4.198v-.93H7.955v-1.503h2.77v-.93h-2.77v-1.224h2.978v-.934Zm2.146 0h-1.084v5.52h1.035v-3.6l2.226 3.6h1.118v-5.52h-1.036v3.686l-2.259-3.687Zm5.117 0h-1.208l1.973 5.52h1.19l1.976-5.52h-1.182l-1.352 4.085-1.397-4.086ZM5.4 19.68H3.72v1.68H5.4v-1.68Z" />
+								</svg>
+							</figure>
+							<figure>
+								<svg
+									role="img"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path d="M12.118 5.466a2.306 2.306 0 00-.623.08c-.278.067-.702.332-.953.583-.41.423-.49.609-.662 1.469-.08.423.41 1.43.847 1.734.45.317 1.085.502 2.065.608 1.429.16 1.84.636 1.84 2.197 0 1.377-.385 1.747-1.96 1.906-1.707.172-2.58.834-2.765 2.117-.106.781.41 1.76 1.125 2.091 1.627.768 3.15-.198 3.467-2.196.211-1.284.622-1.642 1.998-1.747 1.588-.133 2.409-.675 2.713-1.787.278-1.02-.304-2.157-1.297-2.554-.264-.106-.873-.238-1.35-.291-1.495-.16-1.879-.424-2.038-1.39-.225-1.337-.317-1.562-.794-2.09a2.174 2.174 0 00-1.613-.73zm-4.785 4.36a2.145 2.145 0 00-.497.048c-1.469.318-2.17 2.051-1.35 3.295 1.178 1.774 3.944.953 3.97-1.177.012-1.193-.98-2.143-2.123-2.166zM2.089 14.19a2.22 2.22 0 00-.427.052c-2.158.476-2.237 3.626-.106 4.182.53.145.582.145 1.111.013 1.191-.318 1.866-1.456 1.549-2.607-.278-1.02-1.144-1.664-2.127-1.64zm19.824.008c-.233.002-.477.058-.784.162-1.39.477-1.866 2.092-.98 3.336.557.794 1.96 1.058 2.82.516 1.416-.874 1.363-3.057-.093-3.746-.38-.186-.663-.271-.963-.268z" />
+								</svg>
+							</figure>
+						</div>
+					</div>
+					<div className="container_buttons">
+						<Button variant="contained" className="button_project" fullWidth>
+							{" "}
+							<a href="http://"></a> GitHub
+						</Button>
+						<Button variant="contained" className="button_project" fullWidth>
+							{" "}
+							<a href="http://"></a> Demo
+						</Button>
+					</div>
+				</article>
+				<article className="card_project">
+					<h2> Culmen - Ecommerce </h2>
+					<img src={culmen_mockups} alt="" className="img_project" />
+					<div className="container_tecn_project">
+						<span>FullStack</span>
+						<span>Javascript</span>
+						<span>Nodejs</span>
+						<span>MySQL</span>
+						<span>Express</span>
+						<span>Sequelize</span>
+					</div>
+					<div className="container_descript_icons">
+						<p className="text_description_project">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Repellendus molestiae quo exercitationem dolorem nobis aliquam
+							harum aperiam aspernatur sunt enim iusto distinctio repellat
+							accusantium earum pariatur, tempora ad quaerat consectetur.
+						</p>
+						<div className="tecnologies_icons">
+							<figure>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-javascript"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+									<path d="M7.5 8h3v8l-2 -1"></path>
+									<path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"></path>
+								</svg>
+							</figure>
+							<figure>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-nodejs"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M9 9v8.044a2 2 0 0 1 -2.996 1.734l-1.568 -.9a3 3 0 0 1 -1.436 -2.561v-6.635a3 3 0 0 1 1.436 -2.56l6 -3.667a3 3 0 0 1 3.128 0l6 3.667a3 3 0 0 1 1.436 2.561v6.634a3 3 0 0 1 -1.436 2.56l-6 3.667a3 3 0 0 1 -3.128 0"></path>
+									<path d="M17 9h-3.5a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-3.5"></path>
+								</svg>
+							</figure>
+							<figure>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-mysql"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M13 21c-1.427 -1.026 -3.59 -3.854 -4 -6c-.486 .77 -1.501 2 -2 2c-1.499 -.888 -.574 -3.973 0 -6c-1.596 -1.433 -2.468 -2.458 -2.5 -4c-3.35 -3.44 -.444 -5.27 2.5 -3h1c8.482 .5 6.421 8.07 9 11.5c2.295 .522 3.665 2.254 5 3.5c-2.086 -.2 -2.784 -.344 -3.5 0c.478 1.64 2.123 2.2 3.5 3"></path>
+									<path d="M9 7h.01"></path>
+								</svg>
+							</figure>
+							<figure>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-npm"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M1 8h22v7h-12v2h-4v-2h-6z"></path>
+									<path d="M7 8v7"></path>
+									<path d="M14 8v7"></path>
+									<path d="M17 11v4"></path>
+									<path d="M4 11v4"></path>
+									<path d="M11 11v1"></path>
+									<path d="M20 11v4"></path>
+								</svg>
+							</figure>
+							<figure>
+								<svg
+									role="img"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
+								</svg>
+							</figure>
+							<figure>
+								<svg
+									role="img"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path d="M24 0v24H0V0h24ZM10.933 15.89H6.84v5.52h4.198v-.93H7.955v-1.503h2.77v-.93h-2.77v-1.224h2.978v-.934Zm2.146 0h-1.084v5.52h1.035v-3.6l2.226 3.6h1.118v-5.52h-1.036v3.686l-2.259-3.687Zm5.117 0h-1.208l1.973 5.52h1.19l1.976-5.52h-1.182l-1.352 4.085-1.397-4.086ZM5.4 19.68H3.72v1.68H5.4v-1.68Z" />
+								</svg>
+							</figure>
 						</div>
 					</div>
 					<div className="container_buttons">
@@ -219,6 +413,42 @@ const MyProjects = () => {
 									<path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"></path>
 								</svg>
 							</figure>
+							<figure>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-css3"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+									<path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+								</svg>
+							</figure>
+							<figure>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-html5"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+									<path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+								</svg>
+							</figure>
 						</div>
 					</div>
 					<div className="container_buttons">
@@ -232,6 +462,7 @@ const MyProjects = () => {
 						</Button>
 					</div>
 				</article>
+
 				<article className="card_project">
 					<h2>To Do List - DH </h2>
 					<img src={todo_mockups} alt="" className="img_project" />
@@ -268,6 +499,42 @@ const MyProjects = () => {
 									<path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"></path>
 								</svg>
 							</figure>
+							<figure>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-css3"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+									<path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+								</svg>
+							</figure>
+							<figure>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-brand-html5"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+									<path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+								</svg>
+							</figure>
 						</div>
 					</div>
 					<div className="container_buttons">
@@ -289,34 +556,99 @@ const MyProjects = () => {
 						<span>Javascript</span>
 						<span>Css</span>
 					</div>
-					<div className="container_descript_icons">
-						<p className="text_description_project">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Repellendus molestiae quo exercitationem dolorem nobis aliquam
-							harum aperiam aspernatur sunt enim iusto distinctio repellat
-							accusantium earum pariatur, tempora ad quaerat consectetur.
-						</p>
-						<div className="tecnologies_icons">
-							<figure>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="icon icon-tabler icon-tabler-brand-javascript"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									stroke-width="2"
-									stroke="currentColor"
-									fill="none"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-									<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
-									<path d="M7.5 8h3v8l-2 -1"></path>
-									<path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"></path>
-								</svg>
-							</figure>
-						</div>
+					<div>
+						<Accordion
+							expanded={expanded === "panel1"}
+							onChange={handleChange("panel1")}
+							sx={{
+								backgroundColor: "rgba(1, 1, 1, 0.5)",
+								color: "rgb(241, 191, 199)",
+								borderRadius: "15px",
+								display: "flex",
+								flexDirection: "column",
+								justifyContent: "space-around",
+							}}
+						>
+							<AccordionSummary
+								aria-controls="panel1d-content"
+								id="panel1d-header"
+							>
+								{expanded === "panel1" ? (
+									<KeyboardArrowRightIcon />
+								) : (
+									<KeyboardArrowDownIcon />
+								)}
+								<Typography sx={{ fontStyle: "italic", pl:2 }}>
+									{" "}
+									Description :{" "}
+								</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<p className="text_description_project">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Repellendus molestiae quo exercitationem dolorem nobis aliquam
+									harum aperiam aspernatur sunt enim iusto distinctio repellat
+									accusantium earum pariatur, tempora ad quaerat consectetur.
+								</p>
+								<div className="tecnologies_icons">
+									<figure>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-brand-javascript"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="2"
+											stroke="currentColor"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+											<path d="M7.5 8h3v8l-2 -1"></path>
+											<path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"></path>
+										</svg>
+									</figure>
+									<figure>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-brand-css3"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="2"
+											stroke="currentColor"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+											<path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+										</svg>
+									</figure>
+									<figure>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-brand-html5"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="2"
+											stroke="currentColor"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+											<path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+										</svg>
+									</figure>
+								</div>
+							</AccordionDetails>
+						</Accordion>
 					</div>
 					<div className="container_buttons">
 						<Button variant="contained" className="button_project" fullWidth>

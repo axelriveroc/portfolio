@@ -14,12 +14,6 @@
 	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
-/* .container_cards_projects {
-	width: 100%;
-	
-	border: solid green;
-}  */
-
 .card_project {
 	margin: 1rem;
 	background-color: rgba(64, 63, 63, 0.5);
@@ -111,6 +105,20 @@
 
 .button_project {
 	background-color: blueviolet !important;
+}
+
+.container_buttons a {
+	text-decoration: none;
+	color: rgb(247, 219, 224);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.container_buttons a:hover {
+	opacity: .5;
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
 }
 
 @media (max-width: 900px) {
