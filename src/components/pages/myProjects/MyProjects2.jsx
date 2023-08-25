@@ -14,7 +14,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-react"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -35,7 +34,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-react"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -56,7 +54,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-firebase"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -70,11 +67,9 @@ const MyProjects2 = () => {
 		</svg>,
 		<svg
 			role="img"
-			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -88,7 +83,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-npm"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -106,11 +100,9 @@ const MyProjects2 = () => {
 		</svg>,
 		<svg
 			role="img"
-			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -124,7 +116,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-redux"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -141,12 +132,10 @@ const MyProjects2 = () => {
 		</svg>,
 		<svg
 			role="img"
-			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 			className="icon icon-tabler icon-tabler-brand-redux"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -157,11 +146,9 @@ const MyProjects2 = () => {
 		</svg>,
 		<svg
 			role="img"
-			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -172,11 +159,9 @@ const MyProjects2 = () => {
 		</svg>,
 		<svg
 			role="img"
-			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -193,7 +178,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-javascript"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -210,7 +194,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-nodejs"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -226,7 +209,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-mysql"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -242,7 +224,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-npm"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -260,11 +241,9 @@ const MyProjects2 = () => {
 		</svg>,
 		<svg
 			role="img"
-			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -275,11 +254,9 @@ const MyProjects2 = () => {
 		</svg>,
 		<svg
 			role="img"
-			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -296,7 +273,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-javascript"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -313,7 +289,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-css3"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -329,7 +304,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-html5"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -348,7 +322,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-javascript"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -365,7 +338,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-css3"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -381,7 +353,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-html5"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -400,7 +371,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-javascript"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -417,7 +387,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-css3"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -433,7 +402,6 @@ const MyProjects2 = () => {
 			className="icon icon-tabler icon-tabler-brand-html5"
 			width="24"
 			height="24"
-			viewBox="0 0 24 24"
 			strokeWidth="2"
 			stroke="currentColor"
 			fill="none"
@@ -459,7 +427,7 @@ const MyProjects2 = () => {
 					"Redux",
 					"MaterialUI",
 				]}
-				description="Lorem ipsum, dolor sit amet consectetur adipisicing elit..."
+				description="Audiophile, an online audio tech store created using React and Material UI, stands out with its responsive design and powerful admin features. It empowers administrators with the ability to manage products, user roles, and sales records effortlessly. The platform seamlessly integrates Firebase and Mercado Pago for smooth user experiences and efficient payments, all hosted on Vercel for optimal performance and convenience."
 				github="#"
 				demo="#"
 				iconsAudio={iconsAudio}
@@ -476,7 +444,7 @@ const MyProjects2 = () => {
 					"Sequelize",
 					"EJS",
 				]}
-				description="Lorem ipsum, dolor sit amet consectetur adipisicing elit..."
+				description="Culmen is a mountain apparel e-commerce store. I implemented a Model-View-Controller design pattern with EJS and Node.js. MySQL serves as the database, and the server is powered by the Express framework, connecting to the database using the Sequelize ORM. It processes images with Multer and interfaces with Cloudinary. It was initially deployed on Railway, but due to payment issues, the code is now accessible only on GitHub."
 				github="#"
 				demo="#"
 				iconsCulmen={iconsCulmen}
@@ -485,7 +453,7 @@ const MyProjects2 = () => {
 				title="To Do List - DH"
 				image={todo_mockups}
 				technologies={["FrontEnd", "Javascript", "FetchAPI", "SweetAlert"]}
-				description="Lorem ipsum, dolor sit amet consectetur adipisicing elit..."
+				description="I created a web application – a To-Do List – using Vanilla JavaScript. This application interacts with a Digital House-provided API to implement CRUD operations. I incorporated Sweet Alert for user-friendly alerts during CRUD actions. Additionally, the application features a registration and login form that also communicates with the API."
 				github="#"
 				demo="#"
 				iconsTodo={iconsTodo}
@@ -500,7 +468,7 @@ const MyProjects2 = () => {
 					"AnimatedOnScroll",
 					"Css",
 				]}
-				description="Lorem ipsum, dolor sit amet consectetur adipisicing elit..."
+				description="I designed 'Encanto Halloween,' a web application focused on layout and aesthetics. It's a Halloween-themed shop showcasing products and novelties. The site uses 'Animated on Scroll' for captivating animations and integrates 'Swiper' to create dynamic slides on the homepage."
 				github="#"
 				demo="#"
 				iconsHalloween={iconsHalloween}
@@ -509,10 +477,10 @@ const MyProjects2 = () => {
 				title="Tarot - Oráculo Mágico"
 				image={tarot_mockups}
 				technologies={["FrontEnd", "Javascript", "Css"]}
-				description="Lorem ipsum, dolor sit amet consectetur adipisicing elit..."
+				description="My very first web project, created with Vanilla JavaScript, is a Tarot card game simulation. The mystical oracle randomly selects cards to determine whether two players have a match. The unique aspect is that it's all on one page, utilizing localStorage for data persistence."
 				github="#"
 				demo="#"
-                iconsTarot={iconsTarot}
+				iconsTarot={iconsTarot}
 			/>
 		</section>
 	);

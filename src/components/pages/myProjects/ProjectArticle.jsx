@@ -41,56 +41,58 @@ const ProjectArticle = ({
 					<span key={index}>{tech}</span>
 				))}
 			</div>
-			<div>
-				<Accordion
-					expanded={expanded}
-					onChange={handleChange}
+			<Accordion
+				expanded={expanded}
+				onChange={handleChange}
+				className={` ${
+					expanded
+						? "acordion_container_expanded"
+						: "acordion_container_noexpanded"
+				}`}
+			>
+				<AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+					{expanded ? <KeyboardArrowRightIcon /> : <KeyboardArrowDownIcon />}
+					{!expanded ? (
+						<Typography sx={{ fontStyle: "italic", pl: 1 }}>
+							Description
+						</Typography>
+					) : (
+						""
+					)}
+				</AccordionSummary>
+				<AccordionDetails
 					sx={{
-						backgroundColor: "rgba(1, 1, 1, 0.5)",
-						color: "rgb(241, 191, 199)",
-						borderRadius: "15px",
 						display: "flex",
 						flexDirection: "column",
-						justifyContent: "space-around",
+						gap:{ xs: 2 , sm: expanded ? 4 : 2},
+						mt: { xs: 0 , sm:expanded ? 2 : 0},
 					}}
 				>
-					<AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-						{expanded ? <KeyboardArrowRightIcon /> : <KeyboardArrowDownIcon />}
-						{!expanded ? (
-							<Typography sx={{ fontStyle: "italic", pl: 2 }}>
-								Description
-							</Typography>
-						) : (
-							""
-						)}
-					</AccordionSummary>
-					<AccordionDetails>
-						<p className="text_description_project">{description}</p>
-						<div className="tecnologies_icons">
-							{title === "AudioPhile - Ecommerce" &&
-								iconsAudio?.map((icon, index) => (
-									<figure key={index}>{icon}</figure>
-								))}
-							{title === "Culmen - Ecommerce" &&
-								iconsCulmen?.map((icon, index) => (
-									<figure key={index}>{icon}</figure>
-								))}
-							{title === "To Do List - DH" &&
-								iconsTodo?.map((icon, index) => (
-									<figure key={index}>{icon}</figure>
-								))}
-							{title === "Encanto Halloween - Shop" &&
-								iconsHalloween?.map((icon, index) => (
-									<figure key={index}>{icon}</figure>
-								))}
-							{title === "Tarot - Oráculo Mágico" &&
-								iconsTarot?.map((icon, index) => (
-									<figure key={index}>{icon}</figure>
-								))}
-						</div>
-					</AccordionDetails>
-				</Accordion>
-			</div>
+					<p className="text_description_project">{description}</p>
+					<div className="tecnologies_icons">
+						{title === "AudioPhile - Ecommerce" &&
+							iconsAudio?.map((icon, index) => (
+								<figure key={index}>{icon}</figure>
+							))}
+						{title === "Culmen - Ecommerce" &&
+							iconsCulmen?.map((icon, index) => (
+								<figure key={index}>{icon}</figure>
+							))}
+						{title === "To Do List - DH" &&
+							iconsTodo?.map((icon, index) => (
+								<figure key={index}>{icon}</figure>
+							))}
+						{title === "Encanto Halloween - Shop" &&
+							iconsHalloween?.map((icon, index) => (
+								<figure key={index}>{icon}</figure>
+							))}
+						{title === "Tarot - Oráculo Mágico" &&
+							iconsTarot?.map((icon, index) => (
+								<figure key={index}>{icon}</figure>
+							))}
+					</div>
+				</AccordionDetails>
+			</Accordion>
 			<div className="container_buttons">
 				<a href={github}>
 					{" "}
