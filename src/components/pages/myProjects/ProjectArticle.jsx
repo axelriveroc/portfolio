@@ -50,10 +50,10 @@ const ProjectArticle = ({
 						: "acordion_container_noexpanded"
 				}`}
 			>
-				<AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+				<AccordionSummary aria-controls="panel1d-content" id="panel1d-header" className="acordion_container_description">
 					{expanded ? <KeyboardArrowRightIcon /> : <KeyboardArrowDownIcon />}
 					{!expanded ? (
-						<Typography sx={{ fontStyle: "italic", pl: 1 }}>
+						<Typography sx={{ fontStyle: "italic", pl: 1  }}>
 							Description
 						</Typography>
 					) : (

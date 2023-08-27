@@ -28,6 +28,8 @@
 	height: 450px;
 	position: absolute;
 	bottom: -145px;
+	border-radius: 10px;
+
 }
 
 .box_h2_description_aboutMe {
