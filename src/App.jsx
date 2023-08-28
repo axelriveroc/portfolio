@@ -7,6 +7,7 @@ import Home from "./components/pages/home/Home";
 /* import ProjectsSlides from "./components/pages/myProjectSlides/ProjectsSlides";
  */ import Navbar from "./components/pages/navbar/Navbar";
 import Skills from "./components/pages/skills/Skills";
+import SkillsSwiper from "./components/pages/skills/SkillsSwiper";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AboutMe />
       {/*  <MyProjects /> */}
       <MyProjects2 />
+      <SkillsSwiper />
       <Skills />
 
       {/* <ProjectsSlides /> */}

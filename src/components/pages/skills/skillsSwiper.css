@@ -1,0 +1,8 @@
+.container_swiper{
+    min-height: 60vh;
+    color: white;
+    border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
