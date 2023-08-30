@@ -3,7 +3,7 @@ import yo from "../../../assets/yo1.png";
 
 const AboutMe = () => {
   return (
-    <section id="aboutMe" className="section_aboutMe">
+    <section id="AboutMe" className="section_aboutMe">
       <div className="box_aboutMe">
         <div className="box_img_aboutMe">
           <img src={yo} alt="yo" className="foto_aboutMe" />

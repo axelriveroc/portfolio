@@ -1,7 +1,6 @@
 import {
   AppBar,
   Box,
-  Button,
   Container,
   IconButton,
   Menu,
@@ -13,14 +12,7 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./navbarStyles.css";
 
-const pages = [
-  "Home",
-  "About Me",
-  "Skills",
-  "Portfolio",
-  "Certificates",
-  "Contact Me",
-];
+const pages = ["Home", "AboutMe", "Skills", "Projects", "Contact"];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -87,7 +79,10 @@ const Navbar = () => {
                   onClick={handleCloseNavMenu}
                   className="menuItem_hamburg"
                 >
-                  <a href="#" className="anchorList">
+                  {/*  <a href="#" className="anchorList">
+                    {page}
+                  </a> */}
+                  <a href={`#${page}`} className="boton_navbar_desktop">
                     {page}
                   </a>
                 </MenuItem>
@@ -105,19 +100,9 @@ const Navbar = () => {
             }}
           >
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  fontSize: { sm: "18px" },
-                }}
-                className="boton_navbar_desktop"
-              >
+              <a href={`#${page}`} className="boton_navbar_desktop" key={page}>
                 {page}
-              </Button>
+              </a>
             ))}
           </Box>
         </Toolbar>

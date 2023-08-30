@@ -26,9 +26,9 @@ import { FaNpm } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills_section">
+    <section id="Skills" className="skills_section">
       <h3 className="title_skills">Skills</h3>
-    
+
       <div className="card_container">
         <article className="card">
           <SiHtml5 className="icon_tech" />

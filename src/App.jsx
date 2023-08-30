@@ -18,6 +18,7 @@ function App() {
       <AboutMe />
       {/*  <MyProjects /> */}
       <MyProjects2 />
+      
       <SkillsSwiper />
       <Skills />
 

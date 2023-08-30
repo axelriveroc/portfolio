@@ -20,6 +20,18 @@
 .boton_navbar_desktop {
   font-family: "Geologica", sans-serif !important;
   font-weight: 100 !important ;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: pink;
+  transition: all 0.3s ease;
+}
+
+.boton_navbar_desktop:hover {
+  text-decoration: underline;
+  color: white;
+  text-shadow: 0 0 10px #5f0f5b, 0 0 20px #5f0f5b, 0 0 30px #5f0f5b;
+  text-shadow: 0 0 10px var(--loulou), 0 0 20px var(--loulou),
+    0 0 30px var(--loulou);
 }
 
 .menu_hamburg {

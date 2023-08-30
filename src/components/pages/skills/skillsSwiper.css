@@ -1,8 +1,18 @@
-.container_swiper{
-    min-height: 60vh;
-    color: white;
-    border: solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container_swiper {
+  min-height: 60vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+}
+
+@media (min-width: 600px) {
+  .container_swiper {
+    display: none;
+  }
 }

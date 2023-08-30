@@ -3,7 +3,7 @@ import "./homeStyles.css";
 import { Box } from "@mui/material";
 const Home = () => {
   return (
-    <section id="home" className="section_home">
+    <section id="Home" className="section_home">
       <Box className="container_front_welcome">
         <div className="frontend-box">
           <h1 className="h1-name">AXEL RIVERO CORONEL</h1>

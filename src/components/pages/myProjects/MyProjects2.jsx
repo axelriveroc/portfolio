@@ -415,7 +415,7 @@ const MyProjects2 = () => {
   ];
 
   return (
-    <section id="myProjects" className="section_myProjects">
+    <section id="Projects" className="section_myProjects">
       <ProjectArticle
         title="AudioPhile - Ecommerce"
         image={audio_mockups}
@@ -428,8 +428,8 @@ const MyProjects2 = () => {
           "MaterialUI",
         ]}
         description="Audiophile, an online audio tech store created using React and Material UI, stands out with its responsive design and powerful admin features. It empowers administrators with the ability to manage products, user roles, and sales records effortlessly. The platform seamlessly integrates Firebase and Mercado Pago for smooth user experiences and efficient payments, all hosted on Vercel for optimal performance and convenience."
-        github="#"
-        demo="#"
+        github="https://github.com/axelriveroc/ecommerce-it"
+        demo="https://ecommerce-it.vercel.app/"
         iconsAudio={iconsAudio}
       />
       <ProjectArticle
@@ -445,8 +445,8 @@ const MyProjects2 = () => {
           "EJS",
         ]}
         description="Culmen is a mountain apparel e-commerce store. I implemented a Model-View-Controller design pattern with EJS and Node.js. MySQL serves as the database, and the server is powered by the Express framework, connecting to the database using the Sequelize ORM. It processes images with Multer and interfaces with Cloudinary. It was initially deployed on Railway, but due to payment issues, the code is now accessible only on GitHub."
-        github="#"
-        demo="#"
+        github="https://github.com/axelriveroc/culmen-shop"
+        demo=""
         iconsCulmen={iconsCulmen}
       />
       <ProjectArticle
@@ -454,8 +454,8 @@ const MyProjects2 = () => {
         image={todo_mockups}
         technologies={["FrontEnd", "Javascript", "FetchAPI", "SweetAlert"]}
         description="I created a web application – a To-Do List – using Vanilla JavaScript. This application interacts with a Digital House-provided API to implement CRUD operations. I incorporated Sweet Alert for user-friendly alerts during CRUD actions. Additionally, the application features a registration and login form that also communicates with the API."
-        github="#"
-        demo="#"
+        github=""
+        demo="https://to-do-list-dh.web.app/"
         iconsTodo={iconsTodo}
       />
       <ProjectArticle
@@ -469,8 +469,8 @@ const MyProjects2 = () => {
           "Css",
         ]}
         description="I designed 'Encanto Halloween,' a web application focused on layout and aesthetics. It's a Halloween-themed shop showcasing products and novelties. The site uses 'Animated on Scroll' for captivating animations and integrates 'Swiper' to create dynamic slides on the homepage."
-        github="#"
-        demo="#"
+        github=""
+        demo="https://encantohalloween.web.app"
         iconsHalloween={iconsHalloween}
       />
       <ProjectArticle
@@ -478,8 +478,8 @@ const MyProjects2 = () => {
         image={tarot_mockups}
         technologies={["FrontEnd", "Javascript", "Css"]}
         description="My very first web project, created with Vanilla JavaScript, is a Tarot card game simulation. The mystical oracle randomly selects cards to determine whether two players have a match. The unique aspect is that it's all on one page, utilizing localStorage for data persistence."
-        github="#"
-        demo="#"
+        github=""
+        demo="https://tarot-odyssey.web.app/"
         iconsTarot={iconsTarot}
       />
     </section>

@@ -90,3 +90,9 @@
 		width: 90%;
 	}
 }
+
+@media(max-width:600px){
+	.section_aboutMe{
+		padding: 5rem 0;
+	}
+}
