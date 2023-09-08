@@ -1,0 +1,9 @@
+/* Cambia el color del placeholder */
+.inputForm label {
+	color: #9c27b0 !important;
+}
+
+.inputForm input,
+textarea {
+	color: #7c6c8c !important;
+}

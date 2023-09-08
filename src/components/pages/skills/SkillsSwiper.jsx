@@ -40,7 +40,7 @@ import { FaNpm } from "react-icons/fa";
 
 const SkillsSwiper = () => {
   return (
-    <div className="container_swiper" id="Skills">
+    <div className="container_swiper">
       <h2> Hard Skills </h2>
       <h4>FrontEnd</h4>
       <Swiper

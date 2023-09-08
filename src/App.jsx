@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutMe from "./components/pages/aboutMe/AboutMe";
+import ContactMe from "./components/pages/contactMe/ContactMe";
 /* import Shape from "./components/common/shape/Shape"; */
 import Home from "./components/pages/home/Home";
 /* import MyProjects from "./components/pages/myProjects/MyProjects";
@@ -10,21 +11,22 @@ import Skills from "./components/pages/skills/Skills";
 import SkillsSwiper from "./components/pages/skills/SkillsSwiper";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Home />
-      {/* <Shape /> */}
-      <AboutMe />
-      {/*  <MyProjects /> */}
-      <MyProjects2 />
-      
-      <SkillsSwiper />
-      <Skills />
+	return (
+		<>
+			<Navbar />
+			<Home />
+			{/* <Shape /> */}
+			<AboutMe />
+			{/*  <MyProjects /> */}
+			<MyProjects2 />
 
-      {/* <ProjectsSlides /> */}
-    </>
-  );
+			<SkillsSwiper />
+			<Skills />
+			<ContactMe />
+
+			{/* <ProjectsSlides /> */}
+		</>
+	);
 }
 
 export default App;
