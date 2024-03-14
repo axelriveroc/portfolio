@@ -1,0 +1,5 @@
+.container {
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 2rem; /* Adjust padding as needed */
+}
