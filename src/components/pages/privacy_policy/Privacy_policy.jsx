@@ -340,7 +340,7 @@ const Privacy_policy = () => {
           </li>
         </ul>
       </div>
-      <p>© Axel Rivero Coronel</p>
+      <p>© 2024 - Axel Rivero Coronel</p>
     </div>
   );
 };
