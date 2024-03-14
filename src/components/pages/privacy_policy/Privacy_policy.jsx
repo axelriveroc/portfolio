@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Privacy_policy = () => {
   return (
     <div style={{ color: "white" }}>
@@ -108,8 +110,13 @@ const Privacy_policy = () => {
           como se describe en las páginas:
         </p>
         <ul>
-          <li>Aviso Legal</li>
-          <li>Política de Privacidad</li>
+          <li>
+            {" "}
+            <Link to="/aviso_legal">Aviso Legal</Link>
+          </li>
+          <li>
+            <Link to="/privacy_policy">Política de Privacidad</Link>
+          </li>
         </ul>
         <p>
           Los datos personales y la finalidad del tratamiento por parte del
