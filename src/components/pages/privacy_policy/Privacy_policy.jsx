@@ -20,7 +20,7 @@ const Privacy_policy = () => {
         </p>
         <h2>Identidad del responsable</h2>
         <p>Responsable: Axel Rivero Coronel</p>
-        <p>Domicilio: San Pedro, Buenos Aires - Argentina</p>
+        <p>Domicilio: Rosario, Santa Fe - Argentina</p>
         <p>Correo electrónico: riverocoronelaxel@gmail.com</p>
         <p>Sitio Web: https://vercel.com/axelriveroc</p>
         <p>Página de Facebook: https://facebook.com/axelriveroc</p>
